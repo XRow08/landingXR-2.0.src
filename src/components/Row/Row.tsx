@@ -10,7 +10,7 @@ type Props = {
 
 export function Row({
   className,
-  width = 200,
+  width,
   height = 5,
   color,
   borderRadius,

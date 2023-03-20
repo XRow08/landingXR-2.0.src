@@ -5,3 +5,4 @@ export * from './Logo';
 export * from './Sidebar';
 export * from './Title';
 export * from './Row';
+export * from './Icon';

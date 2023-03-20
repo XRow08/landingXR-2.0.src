@@ -1,25 +1,15 @@
-import { Home, About, Team } from './pages';
-import Fullpage, {
-  FullPageSections,
-  FullpageSection,
-  FullpageNavigation,
-} from '@ap.cx/react-fullpage';
+import { Sidebar } from "./components";
+import { Home, About, Team, Work, Projects, Footer } from "./pages";
 
 export default function App() {
   return (
-    <Fullpage>
-      <FullpageNavigation />
-      <FullPageSections>
-        <FullpageSection>
-          <Home />
-        </FullpageSection>
-        <FullpageSection>
-          <About />
-        </FullpageSection>
-        <FullpageSection>
-          <Team />
-        </FullpageSection>
-      </FullPageSections>
-    </Fullpage>
+    <>
+      <Home />
+      <About />
+      <Team />
+      <Projects />
+      <Work />
+      <Footer />
+    </>
   );
 }

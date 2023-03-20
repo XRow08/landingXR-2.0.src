@@ -7,6 +7,7 @@ type Props = {
   color?: string;
   className?: string;
   children: React.ReactNode;
+  aos?: string;
 };
 
 export function Description({
@@ -15,10 +16,12 @@ export function Description({
   color,
   width = 'auto',
   height = 'auto',
+  aos,
 }: Props) {
   return (
     <>
       <h1
+        data-aos={aos}
         style={{ width, height }}
         className={classNames(
           'font-body leading-[45px] tracking-[0.15em] text-[16px]',
